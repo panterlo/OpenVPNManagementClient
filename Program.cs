@@ -49,7 +49,7 @@ namespace OpenVPNManagementClient
 
 			_client.PackageHandler += Client_PackageHandler;
 			_client.Closed += Client_Closed;
-			_isOpen = await _client.ConnectAsync(new IPEndPoint(IPAddress.Parse("10.10.1.11"), 7075));
+			_isOpen = await _client.ConnectAsync(new IPEndPoint(IPAddress.Parse("83.68.236.206"), 7075));
 
 			if (_isOpen == true)
 			{
